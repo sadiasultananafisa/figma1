@@ -349,6 +349,7 @@ footer{
     border: solid rgba(73, 72, 72, 0.5) .5px;
     border-radius: 5px;
     padding: 7px 5px;
+    color: #FFFFFF;
 
 }
 input[type=submit]{
