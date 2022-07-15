@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+/*common css starts here*/
+body{
+    font-family: 'Playfair Display', serif;
+}
+.container{
+    width: 1116px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align_center{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+/*common css ends here*/
+/*header starts here*/
+header{
+    background-image: url(../image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*nav starts here*/
+#nav{
+    background-color: transparent;
+    padding: 25px 0;
+    justify-content: space-between;
+}
+#nav.nav_anim{
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    width:100%;
+    background-color: #676CDB;
+    animation: smooth 0.3s;
+    color: #f1f1f1;
+}
+@keyframes smooth {
+    0%{
+        top:-50px;
+    }
+    100%{
+        top: 0px;
+    } 
+    
+}
+.nav_logo{
+    width: 13%;
+    text-align: left;
+}
+.nav_logo img{
+    width: 60px;
+    padding-left: 5px;
+}
+.menu{
+    width: 65%;
+}
+.menu ul li{
+    display: inline-block;
+    padding-left: 10px;
+    
+}
+.menu ul li a{
+    color: white;
+    font-size: 16px;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    padding: 5px 7px;
+}
+.menu ul li:hover a{
+    background-color: #FFFFFF;
+    color: #676CDB;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.contact{
+    width: 20%;
+   
+}
+.contact a{
+    color: white;
+    font-size: 16px;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    padding: 10px 20px;
+    background-color: #676CDB;
+}
+.contact a:hover{
+    background-color: #FFFFFF;
+    color: #676CDB;
+    text-decoration: none;
+}
+/*nav ends here*/
+/*bio starts here*/
+.bio{
+    height: 550px;
+    padding: 60px 0;
+    text-align: left;
+}
+
+.bio h1{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 120%;
+    color: white;
+    
+}
+.bio h2{
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 120%;
+    color: white;
+}
+.bio p{
+    padding: 10px 0;
+    width: 21%;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.705);
+
+}
+.bio span{
+    color: white;
+}
+.button{
+    margin: 50px 0;
+}
+.button a{
+    color: white;
+    padding: 10px 20px;
+    text-decoration:none;
+    margin-right: 10px;
+}
+.button a:hover {
+    background-color:rgb(103, 108, 219);
+    text-decoration: none;
+}
+.button a img{
+    margin-right: 5px;
+    justify-content: center;
+}
+/*bio ends here*/
+/*header ends here*/
+/*skills starts here*/
+#skills{
+    background-color: black;
+}
+.skills div{
+    width: 20%;
+    padding: 30px 0;
+    text-align: start;
+}
+.skills img{
+    width: 70px;
+}
+.react{
+    text-align: right;
+}
+.skills a img:hover{
+    background-color: rgb(103, 108, 219);
+}
+/*skills ends here*/
+/*works starts here*/
+#work{
+    background-color: rgb(34, 42, 54);
+    padding: 70px 0;
+}
+.item1{
+    width: 25%;
+    padding-top: 50px;
+}
+.item1 img{
+    width: 120px;
+}
+.item1 h4{
+    color: white;
+    font-size: 30px;
+    line-height: 180%;
+    font-weight: 700;
+}
+.item2{
+    width: 75%;
+    padding-left: 20px;
+}
+.item_heading{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 180%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.card{
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.card1{
+    width: 31%;
+    height: 250px;
+    background-color: rgba(196, 196, 196, 1);
+    position: relative;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    
+}
+.card1:hover{
+    background-color: #676CDB;
+    transition: 1.5s;
+}
+.card1 a{
+    bottom: 10px;
+    left: 10px;
+    position: absolute;
+    color: #222A36;
+}
+.card1 a:hover{
+    color: white;
+    transition: .5s;
+    text-decoration: none;
+}
+/*works ends here*/
+/*comment starts here*/
+#client_comments{
+    background-color: rgba(34, 42, 54, 0.95);
+    padding: 70px 0;
+}
+.client_comments{
+    justify-content: space-between;
+}
+.client{
+    width: 80%;
+}
+.client_image{
+    width: 40%;
+}
+.client_image img{
+    width: 100%;
+}
+.client_feedback{
+    width: 60%;
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+.client_feedback p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 180%;
+    color: #FFFFFF;
+    padding: 15px 0;
+    padding-right: 30px;
+}
+.client_feedback p i{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.client_feedback a i{
+    text-align: center;
+    font-size: 30px;
+    color: rgba(103, 108, 219, 1);
+    padding-right: 10px;
+    border: 2px solid transparent;
+    margin-top: 40px;
+    margin-right: 7px;
+    
+}
+.client_feedback a:hover i{
+    color: #FFFFFF;
+    transition: 1s;
+}
+.work_info{
+    width: 13%;
+}
+.work_info p{
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    color: white;
+}
+.work_info p span{
+    font-size: 30px;
+    color: #676CDB;
+    font-weight: 800;
+}
+/*client comments ends here*/
+/*footer starts here*/
+footer{
+    background-color: black;
+}
+.footer{
+    padding: 50px 0;
+}
+.connect{
+    width: 55%;
+}
+.connect h4{
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size: 80px;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+}
+.connect a i{
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.connect a:hover i{
+    color: rgb(42, 71, 167);
+}
+.form{
+    width: 45%;
+}
+.form label{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 7px;
+
+}
+.form input{
+    width: 100%;
+    background-color: black;
+    margin-bottom: 20px;
+    border: solid rgba(73, 72, 72, 0.5) .5px;
+    border-radius: 5px;
+    padding: 7px 5px;
+
+}
+input[type=submit]{
+    width: 20%;
+    background-color: black;
+    outline: none;
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+input[type=submit]:hover{
+    color: #676CDB;
+}
+.foot{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(10, 10, 10);
+}
+.foot span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 180%;
+    text-align: center;
+
+color: white;
+}
+.foot a span:hover{
+    color: #676CDB;
+}
+/*footer endss here*/
